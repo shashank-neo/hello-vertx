@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Twitter Tweets Filter</title>
+	<script type="text/javascript" src="js/sockjs-client.js"></script>
+ 	<script type="text/javascript" src="js/vertx-eventbus.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+			integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+			crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/tweetfilter.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+		  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="well">
+					<div class="form-group">
+						<label for="filters">Filters</label>
+						<textarea placeholder="Enter tweet filters" rows="2" class="form-control" id="filters"></textarea>
+						<button id="searchButton" class="btn btn-danger">Search</button>
+						<button id="stopButton" class="btn btn-danger">Stop</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="form-group">
+					<label for="tweets">Tweets</label>
+					<textarea rows="20" class="form-control" id="tweets" readonly></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
