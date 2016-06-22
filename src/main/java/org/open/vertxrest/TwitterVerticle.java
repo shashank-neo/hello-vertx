@@ -27,10 +27,10 @@ public class TwitterVerticle extends AbstractVerticle {
     public void start() {
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true);
-        cb.setOAuthConsumerKey("Zet7b9zDyV7KUyHtvcYZLo8ZW");
-        cb.setOAuthConsumerSecret("33FO4GDGmhrvjip21Ci48dFP5oKR7hY2ylrUfVhsayCkipX4M1");
-        cb.setOAuthAccessToken("35552292-lprSBBBTE11PJi8cIcn4EEIhdUJAa0lcx5vv1VTVy");
-        cb.setOAuthAccessTokenSecret("ObXZGnEUwCGKVaPWKqvklMQsjAbz2triodWUz4pOEWw8s");
+        cb.setOAuthConsumerKey("<Twitter Consumer key>");
+        cb.setOAuthConsumerSecret("<Twitter Consumer Secret>");
+        cb.setOAuthAccessToken("<Oauth Access Token>");
+        cb.setOAuthAccessTokenSecret("<Oauth access Token Secret>");
 
         twitterStream = new TwitterStreamFactory(cb.build()).getInstance();
         StatusListener listener = new StatusListener() {
